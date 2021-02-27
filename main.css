@@ -1,0 +1,258 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'Inter', 'Arial', 'Calibri';
+	background-color: #fff;
+	font-size: 1.6em;
+	line-height: 1;
+	padding: 0;
+	margin: 0;
+}
+
+p {
+	line-height: 1.6;
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	line-height: 1.2;
+}
+
+h1 {
+	font-size: 6.4rem;
+	line-height: 1;
+}
+
+/*.some, .someone {
+	background-color: teal;
+	width: 100%;
+	height: 100%;
+}
+
+.some {
+	display: block;
+}
+
+.someone {
+	display: inline-block;
+}*/
+
+.header {
+	position: fixed;
+	/*position: sticky;*/
+	width: 100%;
+	top: 0;
+}
+
+.header-container {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid rgba(255, 255, 255, .2);
+	padding: 14px 0; 
+	margin-bottom: 5rem;
+}
+
+.hero {
+	/*background: url("img/header-img.svg");*/
+	/*background-color: #000;*/
+	/*background-position: center;*/
+	/*background-repeat: no-repeat;*/
+	background: url('img/header-img.svg') #000 no-repeat center;
+	height: 72rem;
+	margin-bottom: 10rem;
+}
+
+/*.link-text:nth-child(-n+3) {
+	margin-right: 2em;
+}
+
+.link-text:nth-child(n+3) {
+	margin-right: 42px;
+}*/
+
+.link-text {
+	color: #fff;
+	margin: 0;
+	margin-right: 2em;
+	text-decoration: none;
+}
+/*
+.link-text:last-of-type {
+	margin-right: 4em;
+}*/
+
+.btn {
+	background-color: #E61830;
+	color: #fff;
+	border: 0;
+	padding: 2rem 3rem;
+	border-radius: 6px;
+	display: inline-block;
+	font-size: 13px;
+	font-weight: 700;
+	transition: all .3s ease;
+}
+
+.btn:hover {
+	background-color: #bf0000 ;
+}
+
+.btn-small {
+	padding: 1.2rem 1.2rem;
+}
+
+.hero-left {
+	width: 31.86%;
+}
+
+.hero-text {
+
+}
+
+.hero-text-1 {
+	color: #fff;
+	opacity: 50%;
+}
+
+.hero-text-2 {
+	font-weight: 800;
+	font-size: 6.4rem;
+	color: #fff;
+}
+
+.hero-text-3 {
+	color: #fff;
+	opacity: 70%;
+	padding-right: 0;
+}
+
+.mb-80 {
+	margin-bottom: 8rem;
+}
+
+.mb-16 {
+	margin-bottom: 1.6rem;
+}
+
+.mb-24 {
+	margin-bottom: 2.4rem;
+}
+
+.mb-32 {
+	margin-bottom: 3.2rem;
+}
+
+.mb-40 {
+	margin-bottom: 4rem;
+}
+
+.mb-42 {
+	margin-bottom: 4.2rem;
+}
+
+.title {
+	text-align: center;
+	margin-bottom: 2.4rem;
+	opacity: 50%;
+	font-size: 1.8rem;
+}
+
+.cards {
+	display: flex;
+	margin-bottom: 8rem;
+}
+
+.left-cards {
+	width: 50%;
+}
+
+.right-cards {
+	width: 50%;
+	margin-top: 9rem;
+}
+
+.card {
+	background-color: #F8F8F8;
+	padding: 64px;
+	margin-bottom: 2.4rem;
+	border-radius: 8px;
+}
+
+.card-img {
+	width: 100%;
+}
+
+.title-card {
+	font-weight: 800;
+	font-size: 3.2rem;
+	line-height: 1.1;
+}
+
+.text-card {
+	margin-bottom: 3em;
+}
+
+.car-img {
+	width: 100%;
+	margin-bottom: 8em;
+}
+
+.without-mb {
+	margin-bottom: 0;
+}
+
+.ver-label {
+	text-align: center;
+	margin-bottom: 2.4rem;
+}
+
+.ver-title {
+	text-align: center;
+	font-weight: 800;
+	font-size: 3.2rem;
+}
+
+.table {
+	width: 100%;
+}
+
+.races-img {
+	width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
