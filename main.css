@@ -30,20 +30,6 @@ h1 {
 	line-height: 1;
 }
 
-/*.some, .someone {
-	background-color: teal;
-	width: 100%;
-	height: 100%;
-}
-
-.some {
-	display: block;
-}
-
-.someone {
-	display: inline-block;
-}*/
-
 .header {
 	position: fixed;
 	/*position: sticky;*/
@@ -69,24 +55,12 @@ h1 {
 	margin-bottom: 10rem;
 }
 
-/*.link-text:nth-child(-n+3) {
-	margin-right: 2em;
-}
-
-.link-text:nth-child(n+3) {
-	margin-right: 42px;
-}*/
-
 .link-text {
 	color: #fff;
 	margin: 0;
 	margin-right: 2em;
 	text-decoration: none;
 }
-/*
-.link-text:last-of-type {
-	margin-right: 4em;
-}*/
 
 .btn {
 	background-color: #E61830;
@@ -101,11 +75,19 @@ h1 {
 }
 
 .btn:hover {
-	background-color: #bf0000 ;
+	opacity: 80%;
 }
 
 .btn-small {
 	padding: 1.2rem 1.2rem;
+}
+
+.download-btn {
+	transition: all 0.5s ease;
+}
+
+.download-btn:hover {
+	opacity: 50%;
 }
 
 .hero-left {
@@ -165,16 +147,11 @@ h1 {
 }
 
 .cards {
-	display: flex;
+	display: flex; /* не убирай, сломается */
 	margin-bottom: 8rem;
 }
 
-.left-cards {
-	width: 50%;
-}
-
 .right-cards {
-	width: 50%;
 	margin-top: 9rem;
 }
 
@@ -183,10 +160,20 @@ h1 {
 	padding: 64px;
 	margin-bottom: 2.4rem;
 	border-radius: 8px;
+	transition: all .3s ease;
+}
+
+.card:hover {
+	background-color: #ededed;
 }
 
 .card-img {
 	width: 100%;
+	transition: 0.4s ease;
+}
+
+.card-img:hover {
+	transform: scale(1.05);
 }
 
 .title-card {
@@ -217,6 +204,7 @@ h1 {
 	text-align: center;
 	font-weight: 800;
 	font-size: 3.2rem;
+	margin-bottom: 2.4rem;
 }
 
 .table {
@@ -227,7 +215,161 @@ h1 {
 	width: 100%;
 }
 
+.table-version {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 5rem;
 
+}
+
+.table-and {
+	display: flex;
+	align-items: center;
+	margin-right: 4rem;
+}
+
+.table-app {
+	display: flex;
+	align-items: center;
+}
+
+.table-and-img {
+	border: 1px solid #D3DEE7;
+	padding: 0.8rem 0.5rem 1rem 0.56rem;
+	border-radius: 4px;
+	margin-right: 0.8rem;
+}
+
+.table-app-img {
+	border: 1px solid #D3DEE7;
+	padding: 0.7rem 0.95rem 1rem 0.95rem;
+	border-radius: 4px;
+	margin-right: 0.8rem;
+}
+
+.table-up {
+	display: flex;
+	border-bottom: 1px solid #121213;
+	margin-bottom: 2.4rem;
+	padding-bottom: 2rem;
+}
+
+.table-up-left {
+	display: flex;
+	align-items: flex-end;
+	width: 28%;
+	color: #868B8F;
+}
+
+.table-up-center-left {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 24%;
+}
+
+.table-up-center-right {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 24%;
+	background-color: #F8F8F8;
+}
+
+.table-up-right {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 24%;
+}
+
+.table-bot {
+	display: flex;
+}
+
+.table-bot-left {
+	display: flex;
+	flex-direction: column;
+	width: 28%; 
+}
+
+.table-bot-center-right {
+	background-color: #F8F8F8;
+}
+
+.table-bot-center-left {
+	display: flex;
+	flex-direction: column;
+	width: 24%;
+}
+
+.table-bot-center-right {
+	display: flex;
+	flex-direction: column;
+	width: 24%;
+}
+
+.table-bot-right {
+	display: flex;
+	flex-direction: column;
+	width: 24%;
+}
+
+.table-cell {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 7rem;
+	border-bottom: 1px solid #D3DEE7;
+}
+
+.table-cell:last-child {
+	border-bottom: none;
+}
+
+.version {
+	font-size: 1.6rem;
+	margin-bottom: 0.8rem;
+}
+
+.price-version {
+	display: flex;
+	margin-bottom: 0.8rem;
+}
+
+.price {
+	font-size: 4.8rem;
+}
+
+.dollar {
+	margin-top: 0.5rem;
+	font-size: 2rem;
+	margin-right: 0.4rem;
+}
+
+.buy-btn {
+	background-color: #fff;
+	color: #E61830;
+	border: 1px solid #E61830;
+	padding: 1.2rem 1.2rem;
+	border-radius: 6px;
+	display: inline-block;
+	font-size: 1.2rem;
+	font-weight: 800;
+	background-image: -webkit-linear-gradient(45deg, #E61830 5%, transparent 5%);
+	background-image: linear-gradient(45deg, #E61830 5%, transparent 5%);
+	background-position: 100%;
+	background-size: 400%;
+	-webkit-transition: background 150ms ease-in-out;
+	transition: background 150ms ease-in-out;
+}
+
+.buy-btn:hover {
+	background-position: 0;
+}
 
 
 
